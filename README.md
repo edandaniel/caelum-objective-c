@@ -1,5 +1,8 @@
 # INTRO
 
+# Infra
+MacMini
+
 ## iOS
 - iPhone
 - iPad
@@ -64,7 +67,7 @@ cabecalho e definicoes
 ":" -> extends do java (son of a...)
 UIViewController é como se fosse Activity do Android
 
-## .m
+## .m (messages)
 @implementation ViewController
 
 ### static / non static
@@ -83,3 +86,16 @@ NextStep
 
 ## ("string exemplo %@",stringue)
 Interpolacao de string
+
+## toda classe deve ser filha de alguem 
+
+## syntax sugar
+
+NSString* email = [self.email text];
+NSString* mail = self.mail.text; //funciona assim, mas é dangerous 
+
+[Contato new] => [[Contato alloc] init]
+[[self nome] text]
+
+## @property
+ cria getter, setter e iVar (variavel de Instancia)

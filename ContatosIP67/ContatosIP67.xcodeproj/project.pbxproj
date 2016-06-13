@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347DE1D0F0EB3002346B9 /* Contato.m */; };
 		5FEDDB521D0EEE4500B29CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB511D0EEE4500B29CAA /* main.m */; };
 		5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB541D0EEE4500B29CAA /* AppDelegate.m */; };
 		5FEDDB581D0EEE4500B29CAA /* ContactFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB571D0EEE4500B29CAA /* ContactFormViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F5347DD1D0F0EB3002346B9 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = ../Contato.h; sourceTree = "<group>"; };
+		5F5347DE1D0F0EB3002346B9 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = ../Contato.m; sourceTree = "<group>"; };
 		5FEDDB4D1D0EEE4500B29CAA /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEDDB511D0EEE4500B29CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FEDDB531D0EEE4500B29CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				5FEDDB541D0EEE4500B29CAA /* AppDelegate.m */,
 				5FEDDB561D0EEE4500B29CAA /* ContactFormViewController.h */,
 				5FEDDB571D0EEE4500B29CAA /* ContactFormViewController.m */,
+				5F5347DD1D0F0EB3002346B9 /* Contato.h */,
+				5F5347DE1D0F0EB3002346B9 /* Contato.m */,
 				5FEDDB591D0EEE4500B29CAA /* Main.storyboard */,
 				5FEDDB5F1D0EEE4500B29CAA /* Assets.xcassets */,
 				5FEDDB611D0EEE4500B29CAA /* LaunchScreen.storyboard */,
@@ -273,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */,
 				5FEDDB581D0EEE4500B29CAA /* ContactFormViewController.m in Sources */,
 				5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */,
 				5FEDDB5E1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld in Sources */,
@@ -502,6 +508,7 @@
 				5FEDDB7F1D0EEE4500B29CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FEDDB801D0EEE4500B29CAA /* Build configuration list for PBXNativeTarget "ContatosIP67Tests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +517,7 @@
 				5FEDDB821D0EEE4500B29CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FEDDB831D0EEE4500B29CAA /* Build configuration list for PBXNativeTarget "ContatosIP67UITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +526,7 @@
 				5FEDDB851D0EEE4500B29CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

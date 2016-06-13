@@ -7,9 +7,9 @@
 //
 
 #import "ContactFormViewController.h"
+#import "Contato.h"
 
 @interface ContactFormViewController ()
-
 
 @end
 
@@ -26,13 +26,15 @@
 }
 
 - (IBAction)getFormData{
-    NSString* nome = [self.nome text];
-    NSString* tel = [self.tel text];
-    NSString* email = [self.email text];
-    NSString* mail = [self.mail text];
-    NSString* site = [self.site text];
+    Contato* contato = [Contato new];
+    contato.nome = [self.nome text];
+    contato.tel = [self.tel text];
+    contato.email = [self.email text];
+    contato.mail = [self.mail text];
+    contato.site = [self.site text];
     
-    NSLog(@"\nnombre del hombre🚶: %@\ntelefone del cabrone 📱: %@\nemail 📧: %@\ndereço 📮:%@\nsite🌐:%@",nome,tel,email,mail,site);
+    
+    NSLog(contato.description);
 }
 
 @end
