@@ -10,6 +10,7 @@
 
 @interface ContactFormViewController ()
 
+
 @end
 
 @implementation ContactFormViewController
@@ -25,7 +26,13 @@
 }
 
 - (IBAction)getFormData{
-    NSLog(@"butao clicado 💩💩");
+    NSString* nome = [self.nome text];
+    NSString* tel = [self.tel text];
+    NSString* email = [self.email text];
+    NSString* mail = [self.mail text];
+    NSString* site = [self.site text];
+    
+    NSLog(@"\nnombre del hombre🚶: %@\ntelefone del cabrone 📱: %@\nemail 📧: %@\ndereço 📮:%@\nsite🌐:%@",nome,tel,email,mail,site);
 }
 
 @end

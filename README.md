@@ -53,23 +53,33 @@ programaticamente
 iOS: Simulador (faz de conta)
 Android: Emulador (mundo real)
 
-# .h .mundo
+# Objective-C 
 
 ## .h (header)
 cabecalho e definicoes
 *publico*
 
-## Comportamento de tela => UIViewController
+### Comportamento de tela => UIViewController
 @interface ViewController : UIViewController
 ":" -> extends do java (son of a...)
 UIViewController é como se fosse Activity do Android
 
-# .m
+## .m
 @implementation ViewController
 
-## static / non static
+### static / non static
 - (metodo de instancia) (non static)
 + (static)
 
 ## IBAction
 Interface Builder Action
+
+## [ ] 
+Objective-C trabalha com mensagens, em tempo de execucao
+*[* e *]* sao usados para troca de mensagens
+
+## NS
+NextStep
+
+## ("string exemplo %@",stringue)
+Interpolacao de string
