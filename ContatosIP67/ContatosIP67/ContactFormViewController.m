@@ -6,13 +6,13 @@
 //  Copyright © 2016 Caelum. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ContactFormViewController.h"
 
-@interface ViewController ()
+@interface ContactFormViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ContactFormViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,7 +25,7 @@
 }
 
 - (IBAction)getFormData{
-    NSLog(@"butao clicado");
+    NSLog(@"butao clicado 💩💩");
 }
 
 @end
