@@ -105,11 +105,32 @@ NSString* mail = self.mail.text; //funciona assim, mas é dangerous (get, setter
 ## memory
 Java (Garbage colector)
 iOS
-- In ye olde times (controlar no dedo)
-- nowadays
+- In ye olde times, controlar no dedo, contava referencias e limpava quando era 0
+- nowadays, ARC controla (Automatic Reference Counting)
 
-## strong x weak
+## Referencia : strong x weak
 strong
-- quando controla o objeto, quando voce instancia
+- se tem controle do objeto, voce que instanciou e controla quando libera
+- voce segura cachorro com a coleira, so foge se voce soltar
 weak
-- quando voce usa, nao conhece quem criou, usa weak
+- quando voce só usa a referencia, nao conhece quem criou e nao controla quem libera
+- voce aponta ao cachorro, nao controla quando ele foge
+
+>"Sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás, o que é algo muito importante" - Dilma Rouseff
+
+## Arrays
+Imutaveis, sempre cria objeto novo com itens anteriores + novos, precisa sempre re-referenciar
+
+verifica classe([var isKindOfClass[NSInteger class]])
+
+## inicializadores
+a linguagem nao tem constructors (funciona diferente)
+inicializadores comecam com init
+classe id = NSObject* , ponteiro de object, palavra reservada
+instancetype = id = NSObject*
+
+## variaveis privadas
+para acessar, precisa de _nomedaproperty 
+
+## singleton
+objective C nao aceita singleton, mas da pra chegar perto
