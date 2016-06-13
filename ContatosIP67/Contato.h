@@ -14,5 +14,5 @@
     @property NSString * email;
     @property NSString * mail;
     @property NSString * site;
-
+    //- (NSString*)description;
 @end

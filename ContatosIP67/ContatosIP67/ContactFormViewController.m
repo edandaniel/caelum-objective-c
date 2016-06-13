@@ -27,14 +27,13 @@
 
 - (IBAction)getFormData{
     Contato* contato = [Contato new];
-    contato.nome = [self.nome text];
-    contato.tel = [self.tel text];
-    contato.email = [self.email text];
-    contato.mail = [self.mail text];
-    contato.site = [self.site text];
+    contato.nome = self.nome.text;
+    contato.tel = self.tel.text;
+    contato.email = self.email.text;
+    contato.mail = self.mail.text;
+    contato.site = self.site.text;
     
-    
-    NSLog(contato.description);
+    NSLog(@"%@",contato);
 }
 
 @end

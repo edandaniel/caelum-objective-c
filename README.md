@@ -91,11 +91,25 @@ Interpolacao de string
 
 ## syntax sugar
 
+```ObjectiveC
 NSString* email = [self.email text];
-NSString* mail = self.mail.text; //funciona assim, mas é dangerous 
+NSString* mail = self.mail.text; //funciona assim, mas é dangerous (get, setters e via)
+```
 
 [Contato new] => [[Contato alloc] init]
 [[self nome] text]
 
 ## @property
  cria getter, setter e iVar (variavel de Instancia)
+
+## memory
+Java (Garbage colector)
+iOS
+- In ye olde times (controlar no dedo)
+- nowadays
+
+## strong x weak
+strong
+- quando controla o objeto, quando voce instancia
+weak
+- quando voce usa, nao conhece quem criou, usa weak
