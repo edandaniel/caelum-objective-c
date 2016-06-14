@@ -22,12 +22,11 @@
                                                                      target:self
                                                                      action:@selector(adicionaContato)];
         self.navigationItem.rightBarButtonItem = adicionar;
-        self.dao = [ContatoDAO new];
+        self.dao = [ContatoDAO instancia]; //NAO BOTA NEW AQUI , SENAO NAO APARECE NADA!!!
     }
     self.navigationItem.title=@"🎳🎪";
     return self;
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -49,7 +48,7 @@
     
     [self.dao adiciona:contato];
     //NSLog(self.dao);
-    NSLog(@"%@",contato);
+    //NSLog(@"%@",contato);
 }
 
 -(void)adicionaContato{

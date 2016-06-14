@@ -209,3 +209,15 @@ pra executar metodos é troca de mensagem, se usa [ coisa chamadaAAlgo]
 # try catch
 @try @catch
 
+# arrays
+regra de 3 prova matematica de vetor / string java/objC
+" " = @" "
+[ ] =  x
+
+" "x =  @" " [ ]
+
+x = @ " " [ ] = @[ ]
+    ----------
+      " "
+c.q.d
+

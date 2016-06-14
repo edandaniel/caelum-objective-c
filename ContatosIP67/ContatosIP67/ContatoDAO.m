@@ -14,7 +14,7 @@ static ContatoDAO* defaultDAOInstance = nil;
 
 -(void)adiciona:(Contato*)contato{
     [self.contatos addObject:contato];
-    NSLog(@"Contatos:%@",self.contatos);
+    //NSLog(@"Contatos:%@",self.contatos);
 }
 
 //pseudo singleton
@@ -31,5 +31,8 @@ static ContatoDAO* defaultDAOInstance = nil;
         defaultDAOInstance = [ContatoDAO new];
     }
     return defaultDAOInstance;
+}
+-(Contato*)buscaContatoDaPosicao:(NSInteger) posicao{
+    return self.contatos[posicao];
 }
 @end

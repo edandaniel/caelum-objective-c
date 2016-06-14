@@ -13,4 +13,5 @@
 @property NSMutableArray* contatos;
 -(void)adiciona:(Contato*)contato;
 +(ContatoDAO*)instancia;
+-(Contato*)buscaContatoDaPosicao:(NSInteger) posicao;
 @end
