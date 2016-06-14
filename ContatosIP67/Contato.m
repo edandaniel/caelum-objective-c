@@ -11,7 +11,7 @@
 @implementation Contato
 
 - (NSString*)description{
-    return [NSString stringWithFormat:@"\nnombre del hombre🚶: %@\ntelefone del cabrone 📱: %@\nemail 📧: %@\ndereço 📮:%@\nsite🌐:%@",
+    return [NSString stringWithFormat:@"🚶: %@ 📱: %@ 📧: %@ 📮:%@ 🌐:%@",
             self.nome,self.tel,self.email,self.mail,self.site];
 }
 @end

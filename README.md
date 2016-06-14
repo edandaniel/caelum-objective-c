@@ -202,3 +202,10 @@ pop, voce perde objeto
 no java nao precisa chamar o this na propria classe
 no objC é obrigatorio usar self pra referenciar a si mesmo, chamar metodos e tal
 
+# .
+só se usa com getter e setter, e.g. coisa.propriedade = 1 ou x = coisa.propriedade
+pra executar metodos é troca de mensagem, se usa [ coisa chamadaAAlgo]
+
+# try catch
+@try @catch
+

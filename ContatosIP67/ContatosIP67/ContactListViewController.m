@@ -39,4 +39,21 @@
     [self.navigationController pushViewController:form animated:YES];
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.dao.contatos count];
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+-(UITableViewCell*) tableView:(UITableView*) tableView
+        cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell* linha = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault
+                                                   reuseIdentifier:nil];
+    Contato* contato = [self.dao.contatos objectAtIndex: indexPath.row];
+    linha.textLabel.text = contato.nome;
+    return linha;
+}
+
 @end
