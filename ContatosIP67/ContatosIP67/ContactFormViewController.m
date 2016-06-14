@@ -23,6 +23,14 @@
                                                                      action:@selector(adicionaContato)];
         self.navigationItem.rightBarButtonItem = adicionar;
         self.dao = [ContatoDAO instancia]; //NAO BOTA NEW AQUI , SENAO NAO APARECE NADA!!!
+        
+        if(self.contato){
+            self.nome.text = self.contato.nome; //jeito de fazer com dot notation, ez pz
+            [[self tel]setText:[[self contato]tel]];//jeito masoquista de fazer, pls no
+            [[self mail]setText:self.contato.mail];//mistura dos 2 de cima so pra mostrar que da pra fazer
+            self.email.text = self.contato.email;
+            self.site.text = self.contato.site;
+        }
     }
     self.navigationItem.title=@"🎳🎪";
     return self;
@@ -31,6 +39,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    if(self.contato){
+        self.nome.text = self.contato.nome; //jeito de fazer com dot notation, ez pz
+        [[self tel]setText:[[self contato]tel]];//jeito masoquista de fazer, pls no
+        [[self mail]setText:self.contato.mail];//mistura dos 2 de cima so pra mostrar que da pra fazer
+        self.email.text = self.contato.email;
+        self.site.text = self.contato.site;
+    }
 }
 
 - (void)didReceiveMemoryWarning {

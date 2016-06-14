@@ -23,6 +23,6 @@
 
     //importante ter senao o jow nao ve
     - (IBAction)getFormData;
-
+    @property IBOutlet Contato* contato;
 @end
 

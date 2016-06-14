@@ -210,7 +210,8 @@ pra executar metodos é troca de mensagem, se usa [ coisa chamadaAAlgo]
 @try @catch
 
 # arrays
-regra de 3 prova matematica de vetor / string java/objC
+regra de 3 prova matematica de vetor/string java/objC
+```
 " " = @" "
 [ ] =  x
 
@@ -219,5 +220,25 @@ regra de 3 prova matematica de vetor / string java/objC
 x = @ " " [ ] = @[ ]
     ----------
       " "
+```      
 c.q.d
+
+# screen loading stuff
+init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear
+- init
+- - chamado 1x só
+- loadView
+- - chamado quando terra fez carregamento pela 1a vez, ainda nao foi apresentado
+- - outlet desligados
+- - chamado 1x só
+- viewDidLoad
+- - layout ja foi carregado
+- - Outlet ligados
+- - chamado 1x só
+- viewWillAppear
+- - daqui pra frente sao chamados varias vezes a cada criacao de tela
+- viewDidAppear
+- - view ja apareceu
+- - chamado varias vezes
+- - show/hide, push pop, etc
 

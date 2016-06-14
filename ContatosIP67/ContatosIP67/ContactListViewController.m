@@ -17,7 +17,7 @@
     if(self){
         UIBarButtonItem* adiciona =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                  target:self
-                                                                                 action:@selector(abreForm)];
+                                                                                 action:@selector(exibeForm)];
         self.navigationItem.rightBarButtonItem = adiciona;
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
         self.dao = [ContatoDAO instancia];
@@ -25,13 +25,14 @@
     return self;
 }
 
--(void)abreForm {
-    NSLog(@"AbriuForm");
-    
+-(void)exibeForm {
     UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main"
                                                     bundle:nil];
-    ContactFormViewController* form =[board instantiateViewControllerWithIdentifier:@"form-contato"];
+    ContactFormViewController* form = [board instantiateViewControllerWithIdentifier:@"form-contato"];
+    form.contato  = _selecionado;
     [self.navigationController pushViewController:form animated:YES];
+    _selecionado = nil;
+    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView
@@ -59,9 +60,8 @@ numberOfRowsInSection:(NSInteger)section{
 }
 
 -(void)  tableView:(UITableView *)table
-commitEditingStyle:(UITableViewCellEditingStyle) style
+commitEditingStyle:(UITableViewCellEditingStyle)style
  forRowAtIndexPath:(nonnull NSIndexPath *)path{
-    NSLog(@"asdasd");
     if(style == UITableViewCellEditingStyleDelete){
         [self.dao.contatos removeObjectAtIndex:path.row];
         [table deleteRowsAtIndexPaths:@[path]
@@ -71,6 +71,12 @@ commitEditingStyle:(UITableViewCellEditingStyle) style
 
 -(void) viewWillAppear:(BOOL)animated{
     [self.tableView reloadData];
+}
+
+-(void)		  tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(nonnull NSIndexPath *)path{
+    _selecionado = [self.dao buscaContatoDaPosicao:path.row];
+    [self exibeForm];
 }
 
 @end
