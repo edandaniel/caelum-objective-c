@@ -19,6 +19,7 @@
     if(self){
         self.dao = [ContatoDAO new];
     }
+    self.navigationItem.title=@"🎳🎪🚝 🚄 🚅 🚈 🚞 🚂 🏢";
     return self;
 }
 

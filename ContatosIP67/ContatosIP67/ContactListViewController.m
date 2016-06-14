@@ -7,6 +7,7 @@
 //
 
 #import "ContactListViewController.h"
+#import "ContactFormViewController.h"
 
 @implementation ContactListViewController
 -(id)init{
@@ -22,15 +23,20 @@
 
 -(void)abreForm {
     NSLog(@"Formularius Abriconos");
-    //penca de comandos pra abrir um alert
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Whoa there broh"
-                                                                   message:@"PAGINA EM CONSTRUCAO"
+    /*/penca de comandos pra abrir um alert
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"⚡️Whoa there broh⚡️"
+                                                                   message:@"🍻PAGINA EM CONSTRUCAO🍻"
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK,fazer o que né?" style:UIAlertActionStyleDefault
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"🎰OK,fazer o que né🎰?" style:UIAlertActionStyleDefault
                                                           handler:^(UIAlertAction * action) {}];
     
     [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];
+    [self presentViewController:alert animated:YES completion:nil];*/
+    UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main"
+                                                    bundle:nil];
+    ContactFormViewController* form =[board instantiateViewControllerWithIdentifier:@"form-contato"];
+    [self.navigationController pushViewController:form animated:YES];
 }
+
 @end

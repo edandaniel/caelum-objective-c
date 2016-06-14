@@ -183,3 +183,10 @@ nome do metodo fica como uma frase, cria um sentido (divide:10 por:5)
 P.S.
 se existir uma funcao divide:por:resto, o ObjectiveC considera uma funcao totalmente diferente, porque o nome muda
 BUT, uma funcao com mesmo nome ou outros tipos, (divide:por: porem float:float) da merda, a linguagem acha que as duas sao a mesma, pls dont do it
+
+
+## UIAlertController
+fusao de UI AlertView e UIActionSheet
+
+# downcast
+cast automatico de classe mae pra classe filha, nao da problema
