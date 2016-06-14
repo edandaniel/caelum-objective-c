@@ -226,19 +226,19 @@ c.q.d
 # screen loading stuff
 init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear
 - init
-- - chamado 1x só
+	- chamado 1x só
 - loadView
-- - chamado quando terra fez carregamento pela 1a vez, ainda nao foi apresentado
-- - outlet desligados
-- - chamado 1x só
+	- chamado quando terra fez carregamento pela 1a vez, ainda nao foi apresentado
+	- outlet desligados
+	- chamado 1x só
 - viewDidLoad
-- - layout ja foi carregado
-- - Outlet ligados
-- - chamado 1x só
+	- layout ja foi carregado
+	- Outlet ligados
+	- chamado 1x só
 - viewWillAppear
-- - daqui pra frente sao chamados varias vezes a cada criacao de tela
+	- daqui pra frente sao chamados varias vezes a cada criacao de tela
 - viewDidAppear
-- - view ja apareceu
-- - chamado varias vezes
-- - show/hide, push pop, etc
+	- view ja apareceu
+	- chamado varias vezes
+	- show/hide, push pop, etc
 
