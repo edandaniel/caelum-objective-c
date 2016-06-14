@@ -17,9 +17,14 @@
 -(NSObject*) initWithCoder:(NSCoder*)aDecoder {
     self = [super initWithCoder: aDecoder]; // retorna pra propria classe a inicalizacao default (super pega da classe mae)
     if(self){
+        UIBarButtonItem* adicionar = [[UIBarButtonItem alloc] initWithTitle:@"Add➕"
+                                                                      style:UIBarButtonItemStylePlain
+                                                                     target:self
+                                                                     action:@selector(adicionaContato)];
+        self.navigationItem.rightBarButtonItem = adicionar;
         self.dao = [ContatoDAO new];
     }
-    self.navigationItem.title=@"🎳🎪🚝 🚄 🚅 🚈 🚞 🚂 🏢";
+    self.navigationItem.title=@"🎳🎪";
     return self;
 }
 
@@ -47,6 +52,9 @@
     NSLog(@"%@",contato);
 }
 
-
+-(void)adicionaContato{
+    [self getFormData];
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 @end

@@ -190,3 +190,15 @@ fusao de UI AlertView e UIActionSheet
 
 # downcast
 cast automatico de classe mae pra classe filha, nao da problema
+
+# push pop, present, dismiss
+present e dismiss nao aparece botoes de navegacao
+
+push e pop mostra botoes de navegacao
+pop, voce perde objeto
+
+
+## self (objC) vs this (java)
+no java nao precisa chamar o this na propria classe
+no objC é obrigatorio usar self pra referenciar a si mesmo, chamar metodos e tal
+
