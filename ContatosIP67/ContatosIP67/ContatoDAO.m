@@ -10,9 +10,11 @@
 #import "Contato.h"
 
 @implementation ContatoDAO
-static ContatoDAO* instancia;
+static ContatoDAO* defaultDAOInstance = nil;
+
 -(void)adiciona:(Contato*)contato{
     [self.contatos addObject:contato];
+    NSLog(@"Contatos:%@",self.contatos);
 }
 
 //pseudo singleton
@@ -25,9 +27,9 @@ static ContatoDAO* instancia;
 }
 
 +(ContatoDAO*)instancia{
-    if (!instancia) {
-        instancia = [ContatoDAO new];
+    if (!defaultDAOInstance) {
+        defaultDAOInstance = [ContatoDAO new];
     }
-    return instancia;
+    return defaultDAOInstance;
 }
 @end

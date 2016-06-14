@@ -88,6 +88,7 @@ NextStep
 Interpolacao de string
 
 ## toda classe deve ser filha de alguem 
+nao existe classe sem referencia para pai
 
 ## syntax sugar
 
@@ -134,3 +135,46 @@ para acessar, precisa de _nomedaproperty
 
 ## singleton
 objective C nao aceita singleton, mas da pra chegar perto
+
+# AppDelegate UI
+        application:didFinishLaunchingWithOptions (assinatura)
+        application:(UIApplication*)app didFinishLaunchingWithOptions:(NSDictionary*)options (nome do metodo)
+            ˆ
+			|		      window
+iOS -> AppDelegate->(ViewController+View)
+
+é possivel ter uma tela principal antes da app porque é chamada antes a AppDelegate, antes de criar a windows, que é criada pela junçao do view e ViewController
+
+# funcao que recebe 2 parametros
+application:(UIApplication*)app didFinishLaunchingWithOptions:(NSDictionary*)options ()
+
+## e.g., funcao divide para calcular 10/5
+```Java
+//declaracao
+public int divide(int num1, int num2)
+//chamada
+divide(10,5)
+```
+quando se chama, sem documentacao e implentacao nao se sabe como é a chamada, a ordem, funcao nao tem um sentido so com o nome
+
+```ObjectiveC
+//declaracao
+-(int)divide:(int)num1 por:(int)
+//chamada
+divide:10 por:5
+//nome da funcao
+divide:por:
+
+//still works, but pls, dont do it, not standart, all of the bad practices
+//declaracao
+-(int)divide:(int)num1 :(int)
+//chamada
+divide:10:5
+//nome
+divide::
+```
+WHY?
+nome do metodo fica como uma frase, cria um sentido (divide:10 por:5)
+P.S.
+se existir uma funcao divide:por:resto, o ObjectiveC considera uma funcao totalmente diferente, porque o nome muda
+BUT, uma funcao com mesmo nome ou outros tipos, (divide:por: porem float:float) da merda, a linguagem acha que as duas sao a mesma, pls dont do it

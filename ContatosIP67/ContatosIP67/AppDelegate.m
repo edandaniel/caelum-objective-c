@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ContactListViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // Override point for customization after application launch.+
+    ContactListViewController* lista =[];
+    //normal achar na interwebs essas 3 linhas em 1 só
+    //****
+    UIScreen* telaDoAparelho = [UIScreen mainScreen];
+    CGRect retangulo =[telaDoAparelho bounds];
+    self.window = [[UIWindow alloc]initWithFrame:retangulo];
+    //*****
+    self.window.rootViewController = lista;
     return YES;
 }
 

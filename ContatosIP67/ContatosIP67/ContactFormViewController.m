@@ -14,6 +14,14 @@
 @end
 
 @implementation ContactFormViewController
+-(NSObject*) initWithCoder:(NSCoder*)aDecoder {
+    self = [super initWithCoder: aDecoder]; // retorna pra propria classe a inicalizacao default (super pega da classe mae)
+    if(self){
+        self.dao = [ContatoDAO new];
+    }
+    return self;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,22 +42,10 @@
     contato.site = self.site.text;
     
     [self.dao adiciona:contato];
+    //NSLog(self.dao);
     NSLog(@"%@",contato);
 }
 
-- (NSObject*) init {
-    self = [super init]; // retorna pra propria classe a inicalizacao default (super pega da classe mae)
-    if(self){ //self!=nil
-        /*array imutavel
-        self.contactos = [NSArray new];
-        _contactos = [_contactos addObject:@"John"];
-        _contactos = [_contactos addObject:42];
-        [_contactos count];*/
-        
-        //array mutavel
-        self.dao = [ContatoDAO new];
-    }
-    return self;
-}
+
 
 @end
