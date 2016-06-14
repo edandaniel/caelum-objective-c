@@ -149,6 +149,9 @@ iOS -> AppDelegate->(ViewController+View)
 application:(UIApplication*)app didFinishLaunchingWithOptions:(NSDictionary*)options ()
 
 ## e.g., funcao divide para calcular 10/5
+
+JAVA
+
 ```Java
 //declaracao
 public int divide(int num1, int num2)
@@ -156,6 +159,8 @@ public int divide(int num1, int num2)
 divide(10,5)
 ```
 quando se chama, sem documentacao e implentacao nao se sabe como é a chamada, a ordem, funcao nao tem um sentido so com o nome
+
+ObjectiveC
 
 ```ObjectiveC
 //declaracao

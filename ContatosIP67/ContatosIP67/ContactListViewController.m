@@ -9,5 +9,28 @@
 #import "ContactListViewController.h"
 
 @implementation ContactListViewController
+-(id)init{
+    self = [super init];
+    if(self){
+        UIBarButtonItem* adiciona =[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                      target:self
+                                                      action:@selector(abreForm)];
+        self.navigationItem.rightBarButtonItem = adiciona;
+    }
+    return self;
+}
 
+-(void)abreForm {
+    NSLog(@"Formularius Abriconos");
+    //penca de comandos pra abrir um alert
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Whoa there broh"
+                                                                   message:@"PAGINA EM CONSTRUCAO"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK,fazer o que né?" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 @end

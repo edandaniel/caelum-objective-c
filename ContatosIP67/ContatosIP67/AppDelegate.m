@@ -17,14 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.+
-    ContactListViewController* lista =[];
+    ContactListViewController* lista =[ContactListViewController new];
+    UINavigationController* nav =[[UINavigationController alloc] initWithRootViewController: lista];
+    
     //normal achar na interwebs essas 3 linhas em 1 só
     //****
     UIScreen* telaDoAparelho = [UIScreen mainScreen];
     CGRect retangulo =[telaDoAparelho bounds];
     self.window = [[UIWindow alloc]initWithFrame:retangulo];
-    //*****
-    self.window.rootViewController = lista;
+    //*****    
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible]; //usado por motivacao historica, antigamente era necessario para garantir que a tela respondia aos comandos do usuario, senao tela ficava freezada
     return YES;
 }
 
