@@ -1,5 +1,6 @@
 //
-//  ContactListViewController.m
+//  LISTA CONTATO VIEW CONTROLLER
+//  LCVC
 //  ContatosIP67
 //
 //  Created by ios6400 on 6/13/16.
@@ -23,6 +24,7 @@
         self.dao = [ContatoDAO instancia];
         self.linhaPintada = -1;
     }
+    
     return self;
 }
 
@@ -99,4 +101,25 @@ didSelectRowAtIndexPath:(nonnull NSIndexPath *)path{
 -(void)contatoAdicionado:(Contato*)contato{
     self.linhaPintada = [self.dao buscaPosicaoDoContato:contato];
 }
+
+-(void)viewDidLoad{
+    UILongPressGestureRecognizer* cliqueLongo = [[UILongPressGestureRecognizer alloc]initWithTarget:self
+                                                                                             action:@selector(abreMenuzinho:)];
+    [self.tableView addGestureRecognizer:cliqueLongo]; //precisa estar aqui
+}
+
+-(void)abreMenuzinho:(UIGestureRecognizer*)gesture{
+    if (gesture.state == UIGestureRecognizerStateBegan) {
+        CGPoint ponto = [gesture locationInView:self.tableView];
+        NSIndexPath* path = [self.tableView indexPathForRowAtPoint:ponto];
+        Contato* contato = [self.dao buscaContatoDaPosicao:path.row];
+        UIActionSheet* menuzinho = [[UIActionSheet alloc] initWithTitle:contato.nome
+                                                               delegate:self
+                                                      cancelButtonTitle:@"🈸 cancel"
+                                                 destructiveButtonTitle:@"❗destructo"
+                                                      otherButtonTitles:@"🔱lig",@"🔰emaiu",@"📛çaitê",nil];
+        [menuzinho showInView:self.tableView];
+    }
+}
+
 @end

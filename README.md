@@ -246,12 +246,18 @@ init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear
 chama com self 
 
 # @protocol
-como se fosse interface do java / C#
-implements entre < >
+como se fosse interface do java / C# 
+implements entre < > 
 
 # delegate
 cria interface / protocol
-quem usa a informacao manda no metodo que esta definido para aquele protocolo
-é bom porque desacopla uma classe da outra
+quem usa a informacao manda no metodo que esta definido para aquele protocolo 
+é bom porque desacopla uma classe da outra 
+todo argumento delegate precisa de um protocolo onde é o nome da classe + argumento 
+precisa implementar protocolo 
 
+# @selector
+chamado apenas em tempo de execucao, se nao existir o metodo/chamada, compila do mesmo jeito 
 
+# tableview
+é um IBOutlet

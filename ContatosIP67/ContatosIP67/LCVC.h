@@ -1,5 +1,6 @@
 //
-//  ContactListViewController.h
+//  LISTA CONTATO VIEW CONTROLLER
+//  LCVC
 //  ContatosIP67
 //
 //  Created by ios6400 on 6/13/16.
@@ -10,12 +11,11 @@
 #import "ContatoDAO.h"
 #import "FCVC.h"
 
-@interface LCVC : UITableViewController <FCVCDelegate>
+@interface LCVC : UITableViewController <FCVCDelegate,UIActionSheetDelegate>
 	@property ContatoDAO* dao;
 	@property Contato* selecionado;
 	@property LCVC* lista;
     @property NSInteger linhaPintada;
     -(void)exibeForm;
-    -(void)highlightNoContato:(Contato*)contato;
 @end
 
