@@ -6,12 +6,12 @@
 //  Copyright © 2016 Caelum. All rights reserved.
 //
 
-#import "ContactListViewController.h"
-#import "ContactFormViewController.h"
+#import "LCVC.h"
+#import "FCVC.h"
 #import "ContatoDAO.h"
 
 
-@implementation ContactListViewController
+@implementation LCVC
 -(id)init{
     self = [super init];
     if(self){
@@ -21,6 +21,7 @@
         self.navigationItem.rightBarButtonItem = adiciona;
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
         self.dao = [ContatoDAO instancia];
+        self.linhaPintada = -1;
     }
     return self;
 }
@@ -28,8 +29,8 @@
 -(void)exibeForm {
     UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main"
                                                     bundle:nil];
-    ContactFormViewController* form = [board instantiateViewControllerWithIdentifier:@"form-contato"];
-    //form.delegate = self;
+    FCVC* form = [board instantiateViewControllerWithIdentifier:@"form-contato"];
+    form.delegate = self; /// sem essa linha nao delegava
     if(self.selecionado) form.contato  = _selecionado;
     [self.navigationController pushViewController:form animated:YES];
     _selecionado = nil;
@@ -79,13 +80,23 @@ didSelectRowAtIndexPath:(nonnull NSIndexPath *)path{
     [self exibeForm];
 }
 
--(void)highlightNoContato:(Contato*)contato{
-    self.linhaPintada = [self.dao.contatos indexOfObject:contato];
-}
-
 -(void)viewDidAppear:(BOOL)animated{
-    //NSLOG(@"linha %lu",didself.linhaPintada);
+    if(self.linhaPintada > -1){
+        NSIndexPath* path = [NSIndexPath indexPathForRow:self.linhaPintada
+                                               inSection:0];
+    
+        [self.tableView selectRowAtIndexPath:path
+                                    animated:YES
+                              scrollPosition:UITableViewScrollPositionMiddle];
+    }
     self.linhaPintada = -1;
 }
 
+-(void)contatoAtualizado:(Contato*)contato{
+    self.linhaPintada = [self.dao buscaPosicaoDoContato:contato];
+}
+
+-(void)contatoAdicionado:(Contato*)contato{
+    self.linhaPintada = [self.dao buscaPosicaoDoContato:contato];
+}
 @end

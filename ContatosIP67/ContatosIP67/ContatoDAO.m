@@ -35,5 +35,8 @@ static ContatoDAO* defaultDAOInstance = nil;
 -(Contato*)buscaContatoDaPosicao:(NSInteger) posicao{
     return self.contatos[posicao];
 }
+-(NSInteger)buscaPosicaoDoContato:(Contato*) contato{
+    return [self.contatos indexOfObject:contato];
+}
 
 @end

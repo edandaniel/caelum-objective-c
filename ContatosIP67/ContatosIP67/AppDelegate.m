@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ContactListViewController.h"
+#import "LCVC.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.+
-    ContactListViewController* lista =[ContactListViewController new];
+    LCVC* lista =[LCVC new];
     UINavigationController* nav =[[UINavigationController alloc] initWithRootViewController: lista];
     
     //normal achar na interwebs essas 3 linhas em 1 só

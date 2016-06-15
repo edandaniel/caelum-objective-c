@@ -6,14 +6,14 @@
 //  Copyright © 2016 Caelum. All rights reserved.
 //
 
-#import "ContactFormViewController.h"
+#import "FCVC.h"
 #import "Contato.h"
 
-@interface ContactFormViewController ()
+@interface FCVC ()
 
 @end
 
-@implementation ContactFormViewController
+@implementation FCVC
 -(NSObject*) initWithCoder:(NSCoder*)aDecoder {
     self = [super initWithCoder: aDecoder]; // retorna pra propria classe a inicalizacao default (super pega da classe mae)
     if(self){
@@ -94,21 +94,14 @@
 
 -(void)atualizaContato{
     [self getFormData];
-    
+
     if(self.delegate){
         [self.delegate contatoAtualizado:self.contato];
     }
 
     [self.navigationController popViewControllerAnimated:YES];
-//    [self.lista highlightNoContato:self.contato];
+    //[self.lista highlightNoContato:self.contato];
 }
 
--(void)contatoAtualizado:(Contato*)contato{
-    NSLog(@"atzado");
-}
-
--(void)contatoAdicionado:(Contato*)contato{
-    NSLog(@"adzado");
-}
 
 @end

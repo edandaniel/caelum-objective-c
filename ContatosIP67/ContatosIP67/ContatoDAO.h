@@ -14,4 +14,5 @@
 -(void)adiciona:(Contato*)contato;
 +(ContatoDAO*)instancia;
 -(Contato*)buscaContatoDaPosicao:(NSInteger) posicao;
+-(NSInteger)buscaPosicaoDoContato:(Contato*) contato;
 @end

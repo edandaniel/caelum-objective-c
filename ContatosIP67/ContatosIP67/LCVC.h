@@ -8,15 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ContatoDAO.h"
-#import "ContactFormViewController.h"
+#import "FCVC.h"
 
-@interface ContactListViewController : UITableViewController <CFVCDelegate>
+@interface LCVC : UITableViewController <FCVCDelegate>
 	@property ContatoDAO* dao;
 	@property Contato* selecionado;
-	@property (weak) id<CFVCDelegate> delegate;
-	//@property ContactListViewController* lista;
+	@property LCVC* lista;
     @property NSInteger linhaPintada;
--(void)abreForm;
-    //-(void) highlightNoContato:(Contato*)contato;
+    -(void)exibeForm;
+    -(void)highlightNoContato:(Contato*)contato;
 @end
 

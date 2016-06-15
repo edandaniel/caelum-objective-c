@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <scenes>
-        <!--Contact Form View Controller-->
+        <!--FCVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="form-contato" id="BYZ-38-t0r" customClass="ContactFormViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="form-contato" id="BYZ-38-t0r" customClass="FCVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

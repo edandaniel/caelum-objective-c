@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347DE1D0F0EB3002346B9 /* Contato.m */; };
 		5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E41D0F38CE002346B9 /* ContatoDAO.m */; };
-		5F5347E81D0F4790002346B9 /* ContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E71D0F4790002346B9 /* ContactListViewController.m */; };
+		5F5347E81D0F4790002346B9 /* LCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E71D0F4790002346B9 /* LCVC.m */; };
 		5FEDDB521D0EEE4500B29CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB511D0EEE4500B29CAA /* main.m */; };
 		5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB541D0EEE4500B29CAA /* AppDelegate.m */; };
-		5FEDDB581D0EEE4500B29CAA /* ContactFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB571D0EEE4500B29CAA /* ContactFormViewController.m */; };
+		5FEDDB581D0EEE4500B29CAA /* FCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB571D0EEE4500B29CAA /* FCVC.m */; };
 		5FEDDB5B1D0EEE4500B29CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEDDB591D0EEE4500B29CAA /* Main.storyboard */; };
 		5FEDDB5E1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB5C1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld */; };
 		5FEDDB601D0EEE4500B29CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEDDB5F1D0EEE4500B29CAA /* Assets.xcassets */; };
@@ -43,14 +43,14 @@
 		5F5347DE1D0F0EB3002346B9 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = ../Contato.m; sourceTree = "<group>"; };
 		5F5347E31D0F38CE002346B9 /* ContatoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDAO.h; sourceTree = "<group>"; };
 		5F5347E41D0F38CE002346B9 /* ContatoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDAO.m; sourceTree = "<group>"; };
-		5F5347E61D0F4790002346B9 /* ContactListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListViewController.h; sourceTree = "<group>"; };
-		5F5347E71D0F4790002346B9 /* ContactListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactListViewController.m; sourceTree = "<group>"; };
+		5F5347E61D0F4790002346B9 /* LCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCVC.h; sourceTree = "<group>"; };
+		5F5347E71D0F4790002346B9 /* LCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCVC.m; sourceTree = "<group>"; };
 		5FEDDB4D1D0EEE4500B29CAA /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEDDB511D0EEE4500B29CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FEDDB531D0EEE4500B29CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5FEDDB541D0EEE4500B29CAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5FEDDB561D0EEE4500B29CAA /* ContactFormViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactFormViewController.h; sourceTree = "<group>"; };
-		5FEDDB571D0EEE4500B29CAA /* ContactFormViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactFormViewController.m; sourceTree = "<group>"; };
+		5FEDDB561D0EEE4500B29CAA /* FCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCVC.h; sourceTree = "<group>"; };
+		5FEDDB571D0EEE4500B29CAA /* FCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FCVC.m; sourceTree = "<group>"; };
 		5FEDDB5A1D0EEE4500B29CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5FEDDB5D1D0EEE4500B29CAA /* ContatosIP67.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContatosIP67.xcdatamodel; sourceTree = "<group>"; };
 		5FEDDB5F1D0EEE4500B29CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,10 +114,10 @@
 			children = (
 				5FEDDB531D0EEE4500B29CAA /* AppDelegate.h */,
 				5FEDDB541D0EEE4500B29CAA /* AppDelegate.m */,
-				5FEDDB561D0EEE4500B29CAA /* ContactFormViewController.h */,
-				5FEDDB571D0EEE4500B29CAA /* ContactFormViewController.m */,
-				5F5347E61D0F4790002346B9 /* ContactListViewController.h */,
-				5F5347E71D0F4790002346B9 /* ContactListViewController.m */,
+				5FEDDB561D0EEE4500B29CAA /* FCVC.h */,
+				5FEDDB571D0EEE4500B29CAA /* FCVC.m */,
+				5F5347E61D0F4790002346B9 /* LCVC.h */,
+				5F5347E71D0F4790002346B9 /* LCVC.m */,
 				5F5347E31D0F38CE002346B9 /* ContatoDAO.h */,
 				5F5347E41D0F38CE002346B9 /* ContatoDAO.m */,
 				5F5347DD1D0F0EB3002346B9 /* Contato.h */,
@@ -289,8 +289,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */,
-				5F5347E81D0F4790002346B9 /* ContactListViewController.m in Sources */,
-				5FEDDB581D0EEE4500B29CAA /* ContactFormViewController.m in Sources */,
+				5F5347E81D0F4790002346B9 /* LCVC.m in Sources */,
+				5FEDDB581D0EEE4500B29CAA /* FCVC.m in Sources */,
 				5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */,
 				5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */,
 				5FEDDB5E1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld in Sources */,

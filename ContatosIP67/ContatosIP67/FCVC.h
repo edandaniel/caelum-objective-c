@@ -10,13 +10,13 @@
 #import "Contato.h"
 #import "ContatoDAO.h"
 
-@protocol CFVCDelegate <NSObject>
+@protocol FCVCDelegate <NSObject>
     -(void)contatoAtualizado:(Contato*)contato;
     -(void)contatoAdicionado:(Contato*)contato;
 @end
 
-@interface ContactFormViewController : UIViewController
-	@property (weak) id<CFVCDelegate> delegate;
+@interface FCVC : UIViewController
+	@property (weak) id<FCVCDelegate> delegate;
     // * pode ir nos 3 lugares que da certo
     @property IBOutlet UITextField *nome;
     @property IBOutlet UITextField* tel;
