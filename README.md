@@ -6,9 +6,9 @@ MacMini
 ## iOS
 - iPhone
 - iPad
--iPad
--iWatch
--appleTV
+- iPad
+- iWatch
+- appleTV
 
 ## MacOS
 - Mac
@@ -261,3 +261,8 @@ chamado apenas em tempo de execucao, se nao existir o metodo/chamada, compila do
 
 # tableview
 é um IBOutlet
+
+# notification center
+chamadas de uma App para uma URL sempre passam pelo notification center
+
+

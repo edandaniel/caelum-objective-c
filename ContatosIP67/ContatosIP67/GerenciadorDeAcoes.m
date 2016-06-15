@@ -20,12 +20,63 @@
     UIActionSheet* opcoes = [[UIActionSheet alloc] initWithTitle:self.contato.nome
                                                         delegate:self
                                                cancelButtonTitle:@"🈸 cancel"
-                                          destructiveButtonTitle:@"❗destructo"
-                                               otherButtonTitles:@"🔱lig",@"🔰emaiu",@"📛çaitê",@"Map",nil];
+                                          destructiveButtonTitle:nil//@"❗destructo"
+                                               otherButtonTitles:@"🔱lig",@"📛çaitê",@"🔰emaiu",@"🗾Map",nil];
     [opcoes showInView:controller.view];
 }
 
--(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-    //switch;
+  -(void)actionSheet:(UIActionSheet *)actionSheet
+clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch(buttonIndex){
+        case 0:
+            [self ligar];
+            break;
+        case 1:
+            [self surfar];
+            break;
+        case 2:
+            [self email];
+            break;
+        case 3:
+            [self gps];
+            break;
+        default:break;
+    }
 }
+-(void)abreAppComUrl:(NSString*)url{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
+-(void) ligar{
+    UIDevice* device = [UIDevice currentDevice];
+    if([device.model isEqualToString:@"iPhone"]){
+        NSString* num= [NSString stringWithFormat:@"tel:%@",self.contato.tel] ;
+        [self abreAppComUrl:num];
+    }else{
+        [[UIAlertView alloc] initWithTitle:@"WAOW"
+                                   message:@"LIGACAO IMPOSSIVEL DE FAZER NESSE APARELHO PORQUE NAO E UM IPHONEZ"
+                                  delegate:nil
+                         cancelButtonTitle:@"okz"
+                         otherButtonTitles:nil];
+    }
+}
+
+-(void) surfar{
+    NSString* url = self.contato.site;
+    if(![url hasPrefix:@"http://"])
+        url = [NSString stringWithFormat:@"http://%@",url];
+    [self abreAppComUrl:url];
+}
+
+-(void) email{
+    NSString* url= [NSString stringWithFormat:@"mailto:%@",self.contato.email];
+    [self abreAppComUrl:url];
+}
+
+-(void) gps{
+    NSString* url= [[NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",self.contato.mail]
+                    stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [self abreAppComUrl:url];
+}
+
 @end
