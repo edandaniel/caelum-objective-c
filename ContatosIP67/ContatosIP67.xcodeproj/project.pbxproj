@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F034EA61D11E13F00B463EC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F034EA51D11E13F00B463EC /* MessageUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347DE1D0F0EB3002346B9 /* Contato.m */; };
 		5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E41D0F38CE002346B9 /* ContatoDAO.m */; };
 		5F5347E81D0F4790002346B9 /* LCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E71D0F4790002346B9 /* LCVC.m */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F034EA51D11E13F00B463EC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		5F5347DD1D0F0EB3002346B9 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = ../Contato.h; sourceTree = "<group>"; };
 		5F5347DE1D0F0EB3002346B9 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = ../Contato.m; sourceTree = "<group>"; };
 		5F5347E31D0F38CE002346B9 /* ContatoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDAO.h; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F034EA61D11E13F00B463EC /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +98,7 @@
 		5FEDDB441D0EEE4500B29CAA = {
 			isa = PBXGroup;
 			children = (
+				5F034EA51D11E13F00B463EC /* MessageUI.framework */,
 				5FEDDB4F1D0EEE4500B29CAA /* ContatosIP67 */,
 				5FEDDB6C1D0EEE4500B29CAA /* ContatosIP67Tests */,
 				5FEDDB771D0EEE4500B29CAA /* ContatosIP67UITests */,

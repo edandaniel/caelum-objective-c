@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 #import "Contato.h"
+@import MessageUI;
 
-@interface GerenciadorDeAcoes : NSObject<UIActionSheetDelegate>
+@interface GerenciadorDeAcoes : NSObject<UIActionSheetDelegate,MFMailComposeViewControllerDelegate>
 @property Contato *contato;
 @property UIViewController* controller;
 -(id)initWithContato:(Contato*)contato;

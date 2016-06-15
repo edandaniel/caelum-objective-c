@@ -265,4 +265,5 @@ chamado apenas em tempo de execucao, se nao existir o metodo/chamada, compila do
 # notification center
 chamadas de uma App para uma URL sempre passam pelo notification center
 
-
+# MessageUI 
+nao funciona tao bem com simulador, precisa de um aparelho real pra testar 

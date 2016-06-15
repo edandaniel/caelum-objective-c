@@ -69,13 +69,24 @@ clickedButtonAtIndex:(NSInteger)buttonIndex{
 }
 
 -(void) email{
-    NSString* url= [NSString stringWithFormat:@"mailto:%@",self.contato.email];
-    [self abreAppComUrl:url];
+    if([MFMailComposeViewController canSendMail]){
+        MFMailComposeViewController* mail = [MFMailComposeViewController new];
+        [mail setToRecipients:@[self.contato.email]];
+        mail.mailComposeDelegate = self;
+        [self.controller presentViewController:mail
+                                      animated:YES
+                                    completion:nil];
+    }
 }
 
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
+    [self.controller dismissViewControllerAnimated:YES
+                                        completion:nil];
+}
+         
 -(void) gps{
     NSString* url= [[NSString stringWithFormat:@"http://maps.google.com/maps?q=%@",self.contato.mail]
-                    stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+     stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     [self abreAppComUrl:url];
 }
 
