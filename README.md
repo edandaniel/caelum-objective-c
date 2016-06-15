@@ -242,3 +242,16 @@ init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear
 	- chamado varias vezes
 	- show/hide, push pop, etc
 
+# properties
+chama com self 
+
+# @protocol
+como se fosse interface do java / C#
+implements entre < >
+
+# delegate
+cria interface / protocol
+quem usa a informacao manda no metodo que esta definido para aquele protocolo
+é bom porque desacopla uma classe da outra
+
+

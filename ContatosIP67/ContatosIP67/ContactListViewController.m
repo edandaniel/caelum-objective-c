@@ -29,10 +29,10 @@
     UIStoryboard* board = [UIStoryboard storyboardWithName:@"Main"
                                                     bundle:nil];
     ContactFormViewController* form = [board instantiateViewControllerWithIdentifier:@"form-contato"];
-    form.contato  = _selecionado;
+    //form.delegate = self;
+    if(self.selecionado) form.contato  = _selecionado;
     [self.navigationController pushViewController:form animated:YES];
     _selecionado = nil;
-    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView
@@ -77,6 +77,15 @@ commitEditingStyle:(UITableViewCellEditingStyle)style
 didSelectRowAtIndexPath:(nonnull NSIndexPath *)path{
     _selecionado = [self.dao buscaContatoDaPosicao:path.row];
     [self exibeForm];
+}
+
+-(void)highlightNoContato:(Contato*)contato{
+    self.linhaPintada = [self.dao.contatos indexOfObject:contato];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    //NSLOG(@"linha %lu",didself.linhaPintada);
+    self.linhaPintada = -1;
 }
 
 @end
