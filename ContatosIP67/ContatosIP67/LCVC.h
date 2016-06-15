@@ -10,12 +10,14 @@
 #import <UIKit/UIKit.h>
 #import "ContatoDAO.h"
 #import "FCVC.h"
+#import "GerenciadorDeAcoes.h"
 
 @interface LCVC : UITableViewController <FCVCDelegate,UIActionSheetDelegate>
 	@property ContatoDAO* dao;
 	@property Contato* selecionado;
 	@property LCVC* lista;
     @property NSInteger linhaPintada;
+    @property (readonly) GerenciadorDeAcoes* gerenciador;
     -(void)exibeForm;
 @end
 

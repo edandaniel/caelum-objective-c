@@ -113,13 +113,9 @@ didSelectRowAtIndexPath:(nonnull NSIndexPath *)path{
         CGPoint ponto = [gesture locationInView:self.tableView];
         NSIndexPath* path = [self.tableView indexPathForRowAtPoint:ponto];
         if(path){
-            Contato* contato = [self.dao buscaContatoDaPosicao:path.row];
-            UIActionSheet* menuzinho = [[UIActionSheet alloc] initWithTitle:contato.nome
-                                                                delegate:self
-                                                        cancelButtonTitle:@"🈸 cancel"
-                                                    destructiveButtonTitle:@"❗destructo"
-                                                        otherButtonTitles:@"🔱lig",@"🔰emaiu",@"📛çaitê",nil];
-            [menuzinho showInView:self.tableView];
+            self.selecionado = [self.dao buscaContatoDaPosicao:path.row];
+            _gerenciador = [[GerenciadorDeAcoes alloc] initWithContato:self.selecionado];
+            [            self.gerenciador acoesDoController:self];
         }
     }
 }

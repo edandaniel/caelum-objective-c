@@ -10,6 +10,7 @@
 		5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347DE1D0F0EB3002346B9 /* Contato.m */; };
 		5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E41D0F38CE002346B9 /* ContatoDAO.m */; };
 		5F5347E81D0F4790002346B9 /* LCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E71D0F4790002346B9 /* LCVC.m */; };
+		5FE506AE1D11C6E700D99B71 /* GerenciadorDeAcoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE506AD1D11C6E700D99B71 /* GerenciadorDeAcoes.m */; };
 		5FEDDB521D0EEE4500B29CAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB511D0EEE4500B29CAA /* main.m */; };
 		5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB541D0EEE4500B29CAA /* AppDelegate.m */; };
 		5FEDDB581D0EEE4500B29CAA /* FCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEDDB571D0EEE4500B29CAA /* FCVC.m */; };
@@ -45,6 +46,8 @@
 		5F5347E41D0F38CE002346B9 /* ContatoDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContatoDAO.m; sourceTree = "<group>"; };
 		5F5347E61D0F4790002346B9 /* LCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCVC.h; sourceTree = "<group>"; };
 		5F5347E71D0F4790002346B9 /* LCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCVC.m; sourceTree = "<group>"; };
+		5FE506AC1D11C6E700D99B71 /* GerenciadorDeAcoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorDeAcoes.h; sourceTree = "<group>"; };
+		5FE506AD1D11C6E700D99B71 /* GerenciadorDeAcoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorDeAcoes.m; sourceTree = "<group>"; };
 		5FEDDB4D1D0EEE4500B29CAA /* ContatosIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContatosIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEDDB511D0EEE4500B29CAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5FEDDB531D0EEE4500B29CAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,6 +125,8 @@
 				5F5347E41D0F38CE002346B9 /* ContatoDAO.m */,
 				5F5347DD1D0F0EB3002346B9 /* Contato.h */,
 				5F5347DE1D0F0EB3002346B9 /* Contato.m */,
+				5FE506AC1D11C6E700D99B71 /* GerenciadorDeAcoes.h */,
+				5FE506AD1D11C6E700D99B71 /* GerenciadorDeAcoes.m */,
 				5FEDDB591D0EEE4500B29CAA /* Main.storyboard */,
 				5FEDDB5F1D0EEE4500B29CAA /* Assets.xcassets */,
 				5FEDDB611D0EEE4500B29CAA /* LaunchScreen.storyboard */,
@@ -294,6 +299,7 @@
 				5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */,
 				5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */,
 				5FEDDB5E1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld in Sources */,
+				5FE506AE1D11C6E700D99B71 /* GerenciadorDeAcoes.m in Sources */,
 				5FEDDB521D0EEE4500B29CAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
