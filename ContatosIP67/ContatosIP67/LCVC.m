@@ -112,13 +112,15 @@ didSelectRowAtIndexPath:(nonnull NSIndexPath *)path{
     if (gesture.state == UIGestureRecognizerStateBegan) {
         CGPoint ponto = [gesture locationInView:self.tableView];
         NSIndexPath* path = [self.tableView indexPathForRowAtPoint:ponto];
-        Contato* contato = [self.dao buscaContatoDaPosicao:path.row];
-        UIActionSheet* menuzinho = [[UIActionSheet alloc] initWithTitle:contato.nome
-                                                               delegate:self
-                                                      cancelButtonTitle:@"🈸 cancel"
-                                                 destructiveButtonTitle:@"❗destructo"
-                                                      otherButtonTitles:@"🔱lig",@"🔰emaiu",@"📛çaitê",nil];
-        [menuzinho showInView:self.tableView];
+        if(path){
+            Contato* contato = [self.dao buscaContatoDaPosicao:path.row];
+            UIActionSheet* menuzinho = [[UIActionSheet alloc] initWithTitle:contato.nome
+                                                                delegate:self
+                                                        cancelButtonTitle:@"🈸 cancel"
+                                                    destructiveButtonTitle:@"❗destructo"
+                                                        otherButtonTitles:@"🔱lig",@"🔰emaiu",@"📛çaitê",nil];
+            [menuzinho showInView:self.tableView];
+        }
     }
 }
 
