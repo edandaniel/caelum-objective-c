@@ -114,6 +114,7 @@
 }
 
 -(IBAction)addImg:(id)sender{
+    // tira o ! desse if quando for testar no simulador senao nao mostra menu nem nada 
     if(![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
         UIImagePickerController* picker = [UIImagePickerController new];
         picker.delegate = self;
@@ -122,6 +123,13 @@
         [self.navigationController presentViewController:picker
                                                 animated:YES
                                               completion:nil];
+    }else{
+        UIActionSheet* menu = [[UIActionSheet alloc]initWithTitle:@"escolha"
+                                                         delegate:self //uiactionsheetdelegate
+                                                cancelButtonTitle:@"cancelar"
+                                           destructiveButtonTitle:nil
+                                                otherButtonTitles:@"camera", @"galeria", nil];
+        [menu showInView:self.view];
     }
 }
 
@@ -135,5 +143,20 @@ didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
      [self.navigationController dismissViewControllerAnimated:YES
                                                    completion:nil];
  }
+
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    UIImagePickerController *picker = [UIImagePickerController new];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    if(buttonIndex == 0){
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }else{
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    [self presentViewController:picker
+                       animated:YES
+                     completion:nil];
+    
+}
 
 @end

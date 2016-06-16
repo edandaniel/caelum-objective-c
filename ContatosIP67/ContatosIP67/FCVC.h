@@ -16,7 +16,7 @@
     -(void)contatoAdicionado:(Contato*)contato;
 @end
 
-@interface FCVC : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface FCVC : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate,UIActionSheetDelegate>
 	@property (weak) id<FCVCDelegate> delegate;
     // * pode ir nos 3 lugares que da certo
     @property IBOutlet UITextField *nome;
