@@ -30,6 +30,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSLocationWheninUseUsageDescription</key>
+	<string>libera ai</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>pls</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

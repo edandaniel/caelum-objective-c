@@ -11,5 +11,6 @@
 
 
 @interface CNMVC : UIViewController
-
+    @property CLLocationManager* manager;
+    @property (weak,nonatomic) IBOutlet MKMapView* mapa;
 @end

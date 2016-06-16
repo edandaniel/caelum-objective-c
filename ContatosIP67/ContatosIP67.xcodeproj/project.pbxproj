@@ -49,6 +49,7 @@
 		5F034EA81D12FDBA00B463EC /* CNMVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNMVC.m; path = ../CNMVC.m; sourceTree = "<group>"; };
 		5F034EA91D12FDBA00B463EC /* CNMVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CNMVC.xib; path = ../CNMVC.xib; sourceTree = "<group>"; };
 		5F034EAC1D12FE2200B463EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5F0D91631D1337CD00926654 /* Vila Mariana.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Vila Mariana.gpx"; sourceTree = "<group>"; };
 		5F5347DD1D0F0EB3002346B9 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = ../Contato.h; sourceTree = "<group>"; };
 		5F5347DE1D0F0EB3002346B9 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = ../Contato.m; sourceTree = "<group>"; };
 		5F5347E31D0F38CE002346B9 /* ContatoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDAO.h; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				5FEDDB5F1D0EEE4500B29CAA /* Assets.xcassets */,
 				5FEDDB611D0EEE4500B29CAA /* LaunchScreen.storyboard */,
 				5FEDDB641D0EEE4500B29CAA /* Info.plist */,
+				5F0D91631D1337CD00926654 /* Vila Mariana.gpx */,
 				5FEDDB5C1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld */,
 				5F034EA71D12FDBA00B463EC /* CNMVC.h */,
 				5F034EA81D12FDBA00B463EC /* CNMVC.m */,

@@ -25,7 +25,7 @@
         self.linhaPintada = -1;
         
         UIImage* iconeContatos = [UIImage imageNamed:@"lista-contatos.png"];
-        UITabBarItem* tab = [[UITabBarItem alloc] initWithTitle:@"Mapa"
+        UITabBarItem* tab = [[UITabBarItem alloc] initWithTitle:@"Contatos"
                                                           image:iconeContatos
                                                             tag:0];
         self.tabBarItem = tab;

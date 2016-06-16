@@ -17,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    MKUserTrackingBarButtonItem* botaoGps = [[MKUserTrackingBarButtonItem alloc] initWithMapView:self.mapa];
+    self.navigationItem.rightBarButtonItem = botaoGps;
+    self.manager = [CLLocationManager new];
+    [_manager requestAlwaysAuthorization];
+    [_manager requestWhenInUseAuthorization];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -33,7 +38,7 @@
                                                           image:iconeMapa
                                                             tag:1];
         self.tabBarItem = tab;
-        self.navigationItem.title = @"mapa";
+        self.navigationItem.title = @"lokalizacao";
     }
     return self;
 }
