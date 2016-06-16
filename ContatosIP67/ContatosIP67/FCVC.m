@@ -116,4 +116,14 @@
     }
 }
 
+ -(void)imagePickerController:(UIImagePickerController *)picker
+didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+     UIImage* foto = [info valueForKey:UIImagePickerControllerEditedImage];
+     [self.botaoFoto setBackgroundImage:foto
+                               forState:UIControlStateNormal];
+     [self.navigationController dismissViewControllerAnimated:YES
+                                                   completion:nil];
+     
+ }
+
 @end

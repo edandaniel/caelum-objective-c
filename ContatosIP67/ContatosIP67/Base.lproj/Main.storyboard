@@ -59,9 +59,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-PE-mGo">
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-PE-mGo">
                                 <rect key="frame" x="71" y="57" width="178" height="148"/>
-                                <state key="normal" title="Botao 👀👀👀👀👀👀"/>
+                                <color key="backgroundColor" red="0.20132992617291812" green="0.96747855994053689" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.040183829110187474" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="titleShadowOffset" width="4" height="3"/>
+                                <state key="normal" title="Botao 👀👀👀👀👀👀">
+                                    <color key="titleShadowColor" red="0.0" green="0.028106128130943375" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="addImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmV-m6-2vY"/>
                                     <action selector="getFormData" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUj-bB-fId"/>
