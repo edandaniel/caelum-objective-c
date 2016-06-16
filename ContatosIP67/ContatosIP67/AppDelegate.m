@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LCVC.h"
+#import "CNMVC.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,8 +19,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.+
-    LCVC* lista =[LCVC new];
-    UINavigationController* nav =[[UINavigationController alloc] initWithRootViewController: lista];
     
     //normal achar na interwebs essas 3 linhas em 1 só
     //****
@@ -26,8 +26,20 @@
     CGRect retangulo =[telaDoAparelho bounds];
     self.window = [[UIWindow alloc]initWithFrame:retangulo];
     //*****    
-    self.window.rootViewController = nav;
-    [self.window makeKeyAndVisible]; //usado por motivacao historica, antigamente era necessario para garantir que a tela respondia aos comandos do usuario, senao tela ficava freezada
+    
+ //usado por motivacao historica, antigamente era necessario para garantir que a tela respondia aos comandos do usuario, senao tela ficava freezada
+    
+    
+    //feito pra abrir o mapa
+    LCVC* lista =[LCVC new];
+    UINavigationController* navLista = [[UINavigationController alloc] initWithRootViewController:lista];
+    CNMVC* mapa = [CNMVC new];
+    UINavigationController* navMapa = [[UINavigationController alloc] initWithRootViewController:mapa];
+    UITabBarController* tabs =[UITabBarController new];
+    tabs.viewControllers = @[navLista,navMapa];
+    self.window.rootViewController = tabs;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
