@@ -1,4 +1,5 @@
 //
+//  CONTATOS NO MAPA VIEW CONTROLLER
 //  CNMVC.m
 //  ContatosIP67
 //
@@ -24,6 +25,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(id)init{
+    self = [super init];
+    if(self){
+        UIImage* iconeMapa = [UIImage imageNamed:@"mapa-contatos.png"];
+        UITabBarItem* tab = [[UITabBarItem alloc] initWithTitle:@"Mapa"
+                                                          image:iconeMapa
+                                                            tag:1];
+        self.tabBarItem = tab;
+        self.navigationItem.title = @"mapa";
+    }
+    return self;
+}
 /*
 #pragma mark - Navigation
 

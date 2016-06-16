@@ -23,6 +23,14 @@
         self.navigationItem.leftBarButtonItem = self.editButtonItem;
         self.dao = [ContatoDAO instancia];
         self.linhaPintada = -1;
+        
+        UIImage* iconeContatos = [UIImage imageNamed:@"lista-contatos.png"];
+        UITabBarItem* tab = [[UITabBarItem alloc] initWithTitle:@"Mapa"
+                                                          image:iconeContatos
+                                                            tag:0];
+        self.tabBarItem = tab;
+        self.navigationItem.title = @"contactos";
+
     }
     
     return self;

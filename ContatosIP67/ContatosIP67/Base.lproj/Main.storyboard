@@ -74,11 +74,11 @@
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-PE-mGo">
                                 <rect key="frame" x="-4" y="0.0" width="325" height="285"/>
                                 <color key="backgroundColor" red="0.20132992617291812" green="0.96747855994053689" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.040183829110187474" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="titleShadowOffset" width="3" height="3"/>
                                 <state key="normal" title="Botao 👀👀👀👀👀👀">
-                                    <color key="titleColor" red="0.20132992617291812" green="0.96747855994053689" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.040183829109999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.028106128130943375" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
