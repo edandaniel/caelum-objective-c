@@ -32,4 +32,7 @@
     //importante ter senao o jow nao ve
     - (IBAction)getFormData;
     @property IBOutlet Contato* contato;
+
+    @property IBOutlet botaoImagem;
+    - (IBAction)addImg;
 @end

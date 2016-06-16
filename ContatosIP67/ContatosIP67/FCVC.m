@@ -104,5 +104,33 @@
     //[self.lista highlightNoContato:self.contato];
 }
 
+-(IBAction)addImg{
+    UIImagePickerController* picker = [UIImagePickerController new];
+    [self.navigationController presentViewController:picker
+                                            animated:YES
+                                          completion:nil];
+}
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -193,8 +193,9 @@ cast automatico de classe mae pra classe filha, nao da problema
 
 # push pop, present, dismiss
 present e dismiss nao aparece botoes de navegacao
+e sao fullscren
 
-push e pop mostra botoes de navegacao
+push e pop mostra botoes de navegacao, nao maximiza a tela
 pop, voce perde objeto
 
 
@@ -267,3 +268,6 @@ chamadas de uma App para uma URL sempre passam pelo notification center
 
 # MessageUI 
 nao funciona tao bem com simulador, precisa de um aparelho real pra testar 
+
+# IBAction
+igual void, porem o storyboard consegue ver o objeto
