@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5F034EA61D11E13F00B463EC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F034EA51D11E13F00B463EC /* MessageUI.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		5F034EAA1D12FDBA00B463EC /* CNMVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F034EA81D12FDBA00B463EC /* CNMVC.m */; };
+		5F034EAB1D12FDBA00B463EC /* CNMVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F034EA91D12FDBA00B463EC /* CNMVC.xib */; };
+		5F034EAD1D12FE2200B463EC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F034EAC1D12FE2200B463EC /* MapKit.framework */; };
 		5F5347DF1D0F0EB3002346B9 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347DE1D0F0EB3002346B9 /* Contato.m */; };
 		5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E41D0F38CE002346B9 /* ContatoDAO.m */; };
 		5F5347E81D0F4790002346B9 /* LCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F5347E71D0F4790002346B9 /* LCVC.m */; };
@@ -42,6 +45,10 @@
 
 /* Begin PBXFileReference section */
 		5F034EA51D11E13F00B463EC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		5F034EA71D12FDBA00B463EC /* CNMVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CNMVC.h; path = ../CNMVC.h; sourceTree = "<group>"; };
+		5F034EA81D12FDBA00B463EC /* CNMVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CNMVC.m; path = ../CNMVC.m; sourceTree = "<group>"; };
+		5F034EA91D12FDBA00B463EC /* CNMVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CNMVC.xib; path = ../CNMVC.xib; sourceTree = "<group>"; };
+		5F034EAC1D12FE2200B463EC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5F5347DD1D0F0EB3002346B9 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = ../Contato.h; sourceTree = "<group>"; };
 		5F5347DE1D0F0EB3002346B9 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = ../Contato.m; sourceTree = "<group>"; };
 		5F5347E31D0F38CE002346B9 /* ContatoDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContatoDAO.h; sourceTree = "<group>"; };
@@ -74,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F034EAD1D12FE2200B463EC /* MapKit.framework in Frameworks */,
 				5F034EA61D11E13F00B463EC /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,6 +106,7 @@
 		5FEDDB441D0EEE4500B29CAA = {
 			isa = PBXGroup;
 			children = (
+				5F034EAC1D12FE2200B463EC /* MapKit.framework */,
 				5F034EA51D11E13F00B463EC /* MessageUI.framework */,
 				5FEDDB4F1D0EEE4500B29CAA /* ContatosIP67 */,
 				5FEDDB6C1D0EEE4500B29CAA /* ContatosIP67Tests */,
@@ -136,6 +145,9 @@
 				5FEDDB611D0EEE4500B29CAA /* LaunchScreen.storyboard */,
 				5FEDDB641D0EEE4500B29CAA /* Info.plist */,
 				5FEDDB5C1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld */,
+				5F034EA71D12FDBA00B463EC /* CNMVC.h */,
+				5F034EA81D12FDBA00B463EC /* CNMVC.m */,
+				5F034EA91D12FDBA00B463EC /* CNMVC.xib */,
 				5FEDDB501D0EEE4500B29CAA /* Supporting Files */,
 			);
 			path = ContatosIP67;
@@ -271,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FEDDB631D0EEE4500B29CAA /* LaunchScreen.storyboard in Resources */,
+				5F034EAB1D12FDBA00B463EC /* CNMVC.xib in Resources */,
 				5FEDDB601D0EEE4500B29CAA /* Assets.xcassets in Resources */,
 				5FEDDB5B1D0EEE4500B29CAA /* Main.storyboard in Resources */,
 			);
@@ -303,6 +316,7 @@
 				5FEDDB551D0EEE4500B29CAA /* AppDelegate.m in Sources */,
 				5F5347E51D0F38CE002346B9 /* ContatoDAO.m in Sources */,
 				5FEDDB5E1D0EEE4500B29CAA /* ContatosIP67.xcdatamodeld in Sources */,
+				5F034EAA1D12FDBA00B463EC /* CNMVC.m in Sources */,
 				5FE506AE1D11C6E700D99B71 /* GerenciadorDeAcoes.m in Sources */,
 				5FEDDB521D0EEE4500B29CAA /* main.m in Sources */,
 			);
