@@ -16,7 +16,7 @@
     -(void)contatoAdicionado:(Contato*)contato;
 @end
 
-@interface FCVC : UIViewController
+@interface FCVC : UIViewController <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 	@property (weak) id<FCVCDelegate> delegate;
     // * pode ir nos 3 lugares que da certo
     @property IBOutlet UITextField *nome;
@@ -24,15 +24,14 @@
     @property IBOutlet UITextField * email;
     @property IBOutlet UITextField* mail;
     @property IBOutlet UITextField *site;
-	//@property id <Pintor> delegate;
     //arrays
     @property NSArray* contactos;
     @property ContatoDAO* dao;
 
     //importante ter senao o jow nao ve
-    - (IBAction)getFormData;
+    - (void)getFormData;
     @property IBOutlet Contato* contato;
 
-    @property IBOutlet botaoImagem;
-    - (IBAction)addImg;
+    @property IBOutlet UIButton* botaoFoto;
+    - (IBAction)addImg:(id)sender;
 @end

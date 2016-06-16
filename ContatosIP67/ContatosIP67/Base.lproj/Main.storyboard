@@ -59,6 +59,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-PE-mGo">
+                                <rect key="frame" x="71" y="57" width="178" height="148"/>
+                                <state key="normal" title="Botao 👀👀👀👀👀👀"/>
+                                <connections>
+                                    <action selector="addImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmV-m6-2vY"/>
+                                    <action selector="getFormData" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUj-bB-fId"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moradia  🏯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESJ-z3-ZUd">
                                 <rect key="frame" x="24" y="384" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -71,21 +79,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOH-9l-OD5">
-                                <rect key="frame" x="40" y="39" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSp-PE-mGo">
-                                <rect key="frame" x="71" y="175" width="165" height="30"/>
-                                <state key="normal" title="Botao 👀👀👀👀👀👀"/>
-                                <connections>
-                                    <action selector="getFormData" destination="BYZ-38-t0r" eventType="touchUpInside" id="VUj-bB-fId"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="botaoFoto" destination="NSp-PE-mGo" id="xaX-qz-k2c"/>
                         <outlet property="email" destination="0s1-jL-KEf" id="UYP-Tp-YQL"/>
                         <outlet property="mail" destination="KiI-fr-ocz" id="gEK-pg-fQZ"/>
                         <outlet property="nome" destination="2LA-an-iFl" id="zHG-kp-2O3"/>
