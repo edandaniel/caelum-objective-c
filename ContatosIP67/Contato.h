@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Contato : NSObject
     @property NSString * nome;
@@ -14,5 +15,6 @@
     @property NSString * email;
     @property NSString * mail;
     @property NSString * site;
+    @property UIImage * img;
     //- (NSString*)description;
 @end

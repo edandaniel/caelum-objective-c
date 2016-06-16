@@ -63,6 +63,14 @@
         [[self mail]setText:self.contato.mail];//mistura dos 2 de cima so pra mostrar que da pra fazer
         self.email.text = self.contato.email;
         self.site.text = self.contato.site;
+        
+        UIImage* fotoSalva = self.contato.img;
+        if(fotoSalva){
+            [self.botaoFoto setBackgroundImage:fotoSalva
+                                  forState:UIControlStateNormal];
+            [self.botaoFoto setTitle:nil
+                            forState:UIControlStateNormal];
+        }
     }
 }
 
@@ -80,6 +88,7 @@
     self.contato.email = self.email.text;
     self.contato.mail = self.mail.text;
     self.contato.site = self.site.text;
+    self.contato.img = [self.botaoFoto backgroundImageForState:UIControlStateNormal];
 }
 
 -(void)adicionaContato{//TODO criacontato
@@ -121,9 +130,10 @@ didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
      UIImage* foto = [info valueForKey:UIImagePickerControllerEditedImage];
      [self.botaoFoto setBackgroundImage:foto
                                forState:UIControlStateNormal];
+     [self.botaoFoto setTitle:@""
+                     forState:UIControlStateNormal];
      [self.navigationController dismissViewControllerAnimated:YES
                                                    completion:nil];
-     
  }
 
 @end

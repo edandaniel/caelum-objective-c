@@ -113,9 +113,12 @@ iOS
 strong
 - se tem controle do objeto, voce que instanciou e controla quando libera
 - voce segura cachorro com a coleira, so foge se voce soltar
+- mantem na memoria enquanto o dono esta na memoria
+- ARC so remove da memoria quando o dono soltar
 weak
 - quando voce só usa a referencia, nao conhece quem criou e nao controla quem libera
 - voce aponta ao cachorro, nao controla quando ele foge
+- ARC pode remover da memoria, mesmo quando estiver sendo chamado
 
 >"Sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás, o que é algo muito importante" - Dilma Rouseff
 
