@@ -39,4 +39,5 @@
     @property IBOutlet UIButton* botaoFoto;
     - (IBAction)addImg:(id)sender;
     - (IBAction)buscarCoordenadas:(id)sender;
+    @property IBOutlet UIActivityIndicatorView* rodinha;
 @end

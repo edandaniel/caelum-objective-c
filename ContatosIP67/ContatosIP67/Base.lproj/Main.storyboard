@@ -112,9 +112,12 @@
                                 <rect key="frame" x="249" y="353" width="27" height="31"/>
                                 <state key="normal" title="Button" image="gps"/>
                                 <connections>
-                                    <action selector="buscaCoordenadas" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7q-vD-SHU"/>
+                                    <action selector="buscaCoordenadas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hsm-a5-CPt"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JLg-JO-BTT">
+                                <rect key="frame" x="274" y="353" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -126,6 +129,7 @@
                         <outlet property="longitude" destination="Yjk-Dh-Soa" id="Roh-B4-Tqt"/>
                         <outlet property="mail" destination="KiI-fr-ocz" id="gEK-pg-fQZ"/>
                         <outlet property="nome" destination="2LA-an-iFl" id="zHG-kp-2O3"/>
+                        <outlet property="rodinha" destination="JLg-JO-BTT" id="9mL-98-1Rm"/>
                         <outlet property="site" destination="G64-oc-cxQ" id="x5V-d9-1gy"/>
                         <outlet property="tel" destination="q8O-nh-egf" id="DlV-SF-0J1"/>
                     </connections>

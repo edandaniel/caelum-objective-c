@@ -165,18 +165,22 @@ didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
     
 }
 
--(IBAction)buscaCoordenadas{
+-(IBAction)buscaCoordenadas:(UIButton*)botao{
+    [self.rodinha startAnimating];
+    botao.hidden = YES;
     NSString* enderecoDoContato = self.mail.text;
     CLGeocoder* geo = [CLGeocoder new];
-    [geo geocodeAddressString:enderecoDoContato
-            completionHandler:^(NSArray* resultados, NSError* erro){
-              if(!erro && [resultados count]>0){
-                  CLPlacemark* resultado = resultados[0];
-                  CLLocationCoordinate2D coord = resultado.location.coordinate;
-                  self.latitude.text = [NSString stringWithFormat:@"%f",coord.latitude];
-                  self.longitude.text = [NSString stringWithFormat:@"%f",coord.longitude];
-              }
+    [geo geocodeAddressString:enderecoDoContato completionHandler:^(NSArray* resultados, NSError* erro){
+        if(!erro && [resultados count]>0){
+            CLPlacemark* resultado = resultados[0];
+            CLLocationCoordinate2D coord = resultado.location.coordinate;
+            self.latitude.text = [NSString stringWithFormat:@"%f",coord.latitude];
+            self.longitude.text = [NSString stringWithFormat:@"%f",coord.longitude];
+        }
+        [self.rodinha stopAnimating];
+        botao.hidden = NO;
     }];
+;
 }
 
 @end
