@@ -30,6 +30,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    ContatoDAO* dao =[ContatoDAO instancia];
+    [self.mapa addAnnotations:dao.contatos];
+}
+
+-(void)viewDidDisappear:(BOOL)animated{
+    ContatoDAO *dao = [ContatoDAO instancia];
+    [self.mapa removeAnnotations:dao.contatos];
+}
+
 -(id)init{
     self = [super init];
     if(self){

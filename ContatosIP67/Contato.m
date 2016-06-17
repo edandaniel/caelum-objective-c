@@ -14,4 +14,8 @@
     return [NSString stringWithFormat:@"🚶: %@ 📱: %@ 📧: %@ 📮:%@ 🌐:%@",
             self.nome,self.tel,self.email,self.mail,self.site];
 }
+
+-(CLLocationCoordinate2D)coordinate{
+    return CLLocationCoordinate2DMake([self.latitude doubleValue], [self.longitude doubleValue]);
+}
 @end

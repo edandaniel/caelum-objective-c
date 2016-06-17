@@ -137,7 +137,7 @@ instancetype = id = NSObject*
 para acessar, precisa de _nomedaproperty 
 
 ## singleton
-objective C nao aceita singleton, mas da pra chegar perto
+objective C nao aceita singleton (nao tem construtor privado), mas da pra chegar perto
 
 # AppDelegate UI
         application:didFinishLaunchingWithOptions (assinatura)
@@ -228,7 +228,7 @@ x = @ " " [ ] = @[ ]
 c.q.d
 
 # screen loading stuff
-init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear
+init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear -> viewWillDisappear -> viewDidDisappear -> viewDidUnload -> dealloc
 - init
 	- chamado 1x só
 - loadView
