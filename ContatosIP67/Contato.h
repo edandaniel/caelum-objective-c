@@ -22,3 +22,13 @@
     @property NSNumber* latitude;
     @property NSNumber* longitude;
 @end
+
+@protocol MKAnnotation <NSObject>
+
+@required
+-(CLLocationCoordinate2D)coordinate;
+@optional
+-(NSString*)title;
+-(NSString*)subtitle;
+
+@end
