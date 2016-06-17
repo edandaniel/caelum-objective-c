@@ -58,6 +58,3 @@ fastlane/screenshots
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-./ContatosIP67/Pods/*
-
-
