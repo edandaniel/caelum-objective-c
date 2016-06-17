@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
+#import <CoreData/CoreData.h>
 
-@interface Contato : NSObject<MKAnnotation>
+@interface Contato : NSManagedObject<MKAnnotation>
     @property NSString * nome;
     @property NSString * tel;
     @property NSString * email;
@@ -23,12 +24,12 @@
     @property NSNumber* longitude;
 @end
 
-@protocol MKAnnotation <NSObject>
+//@protocol MKAnnotation <NSObject>
 
-@required
--(CLLocationCoordinate2D)coordinate;
-@optional
--(NSString*)title;
--(NSString*)subtitle;
+//@required
+//-(CLLocationCoordinate2D)coordinate;
+//@optional
+//-(NSString*)title;
+//-(NSString*)subtitle;
 
-@end
+//@end

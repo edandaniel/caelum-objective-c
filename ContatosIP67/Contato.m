@@ -10,6 +10,8 @@
 
 @implementation Contato
 
+@dynamic nome,tel,email,mail,site,img,latitude,longitude;
+
 - (NSString*)description{
     return [NSString stringWithFormat:@"🚶: %@ 📱: %@ 📧: %@ 📮:%@ 🌐:%@",
             self.nome,self.tel,self.email,self.mail,self.site];

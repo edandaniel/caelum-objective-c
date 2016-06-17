@@ -85,7 +85,7 @@
 
 - (void)getFormData{
     if(!self.contato){
-        self.contato = [Contato new];
+        self.contato = [self.dao geraContato];
     }
     _contato.nome = self.nome.text; //_ ou self da na mesma
     self.contato.tel = self.tel.text;

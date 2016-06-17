@@ -1,4 +1,4 @@
-# INTRO
+# INTRO 😂😂😂 🙃
 
 # Infra
 MacMini
@@ -294,3 +294,47 @@ typedef ClassePessoa struct Pessoa*;
 ClassePessoa p = ... malloc (sizeof(Pessoa));
 ```
 tipos que nao tem ponteiro possuem um typedef
+
+# DATA BASS ***
+ORM (Object relational mapping)
+Coredata
+
+## ways to store data
+- memory
++ custom
++ sqlite
++ binary
++ xml file
+
+## xcdatamodel
+addEntity
+imagem -> transformable
+
+------------------------------
+NSManagedObjectModel
+|
+| NSPersistentStoreCoordinator
+|
+v
+NSPersistentStoreType
+------------------------------
+para isso funcionar é necessario NSManagedObjectContext
+
+todo objeto gerenciado pelo core data precisa ser 
+
+# NSManager
+quando mudamos NSObject para NSManagedObject nao se pode usar mais new
+NSObject aceita new mas NSManagedObject é controlado pelo manager, quando se usa um new o manager perde o controle da ruim
+para arrumar precisa usar o data setter 
+
+@dynamic, usando isso getter e setters sao gerados em tempo de execucao e nao compilacao
+
+
+AppDelegate		- ContatoDAO
+Coredata  		- CoreDAO
+				- deixa quieto
+---
+se der erro no sqlite, apagar app do emulador (o que apaga o banco temporario) e criar de novo
+
+
+

@@ -30,7 +30,7 @@
                                                             tag:0];
         self.tabBarItem = tab;
         self.navigationItem.title = @"contactos";
-
+        [[ContatoDAO instancia] lista];
     }
     
     return self;
