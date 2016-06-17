@@ -15,6 +15,9 @@
     @property NSString * email;
     @property NSString * mail;
     @property NSString * site;
+    //foto
     @property UIImage * img;
     //- (NSString*)description;
+    @property NSNumber* latitude;
+    @property NSNumber* longitude;
 @end

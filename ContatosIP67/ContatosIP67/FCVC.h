@@ -8,8 +8,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "Contato.h"
 #import "ContatoDAO.h"
+
 
 @protocol FCVCDelegate <NSObject>
     -(void)contatoAtualizado:(Contato*)contato;
@@ -24,6 +26,8 @@
     @property IBOutlet UITextField * email;
     @property IBOutlet UITextField* mail;
     @property IBOutlet UITextField *site;
+    @property IBOutlet UITextField* latitude;
+    @property IBOutlet UITextField* longitude;
     //arrays
     @property NSArray* contactos;
     @property ContatoDAO* dao;
@@ -34,4 +38,5 @@
 
     @property IBOutlet UIButton* botaoFoto;
     - (IBAction)addImg:(id)sender;
+    - (IBAction)buscarCoordenadas:(id)sender;
 @end

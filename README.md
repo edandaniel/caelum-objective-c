@@ -274,3 +274,23 @@ nao funciona tao bem com simulador, precisa de um aparelho real pra testar
 
 # IBAction
 igual void, porem o storyboard consegue ver o objeto
+
+# new alloc init
+[Class new] = [[Class alloc] init]
+
+# why the hell * everywhere (C revirew)
+
+in C
+```C
+struct Pessoa{
+	int idade;
+	char[] nome;
+}
+//uso com ponteiro
+Pessoa* p = ... malloc (sizeof(Pessoa));
+
+
+typedef ClassePessoa struct Pessoa*;
+ClassePessoa p = ... malloc (sizeof(Pessoa));
+```
+tipos que nao tem ponteiro possuem um typedef
